@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Joining Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans">
+    <header class="absolute inset-x-0 top-0 z-50">
+        <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+            <div class="flex lg:flex-1">
+                <a href="./index.html" class="-m-1.5 p-1.5">
+                    <img class="h-8 w-auto" src="./images/recycle-svgrepo-com (1).svg" alt="Your Company Logo">
+                </a>
+            </div>
+            <div class="flex lg:hidden">
+                <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-400">
+                    <span class="sr-only">Open main menu</span>
+                    <a href="./index.html">
+                        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 20H7C5.89543 20 5 19.1046 5 18V10.9199C5 10.336 5.25513 9.78132 5.69842 9.40136L10.6984 5.11564C11.4474 4.47366 12.5526 4.47366 13.3016 5.11564L18.3016 9.40136C18.7449 9.78132 19 10.336 19 10.9199V18C19 19.1046 18.1046 20 17 20H15M9 20V14C9 13.4477 9.44772 13 10 13H14C14.5523 13 15 13.4477 15 14V20M9 20H15" stroke="#464455" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                </button>
+            </div>
+            <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+                <a href="./event.html" class="text-sm font-semibold leading-6 text-gray-900 hover:text-gray-700">Back<span aria-hidden="true">&rarr;</span></a>
+            </div>
+        </nav>
+    </header>
+    <div class="container mx-auto px-5 py-10">
+        <div class="bg-white rounded-lg shadow-md p-5">
+            <h1 class="text-3xl font-bold mb-4">Recycling Activity
+                <span class="inline-block ml-2 px-3 py-1 rounded-full text-sm font-medium bg-green-100 text-green-900">Activity</span>
+</h1>
+           </h1>
+           
+            <div class="flex items-center mb-4">
+                <img src="./images/recycleActivity.webp" alt="Event Image" class="w-48 h-48 rounded-lg object-cover mr-5">
+                <div>
+                    <p class="text-lg font-medium">Date: May 2, 2024</p>
+                    <p class="text-lg font-medium">Time: 2:00 PM</p>
+                    <p class="text-lg font-medium">Location: Gh6 Dumpyard</p>
+                </div>
+            </div>
+            <p class="mb-8 mr-4">Join us for a informative activity to categorize recylable items.<br>
+                 Learn practical solutions, transform our university environment, and make a positive impact as an LPU community member.<p>
+
+            <form class="space-y-5">
+                <div>
+                    <label for="name" class="block text-gray-700 font-medium">Full Name</label>
+                    <input type="text" id="name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" required>
+                </div>
+
+                <div>
+                    <label for="regno" class="block text-gray-700 font-medium">Registration Number</label>
+                    <input type="text" id="regno" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" required>
+                </div>
+
+                <div>
+                    <label for="course" class="block text-gray-700 font-medium">Course Name</label>
+                    <input type="text" id="course" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" required>
+                </div>
+
+                <div>
+                    <label for="phone" class="block text-gray-700 font-medium">Phone Number</label>
+                    <input type="tel" id="phone" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" required>
+                </div>
+
+                <fieldset class="mt-4">
+                    <legend class="text-gray-700 font-medium">Status</legend>
+                    <div class="flex items-center">
+                        <input type="radio" id="hosteller" name="status" value="hosteller" class="mr-2">
+                        <label for="hosteller">Hosteller</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="radio" id="dayscholar" name="status" value="dayscholar" class="mr-2">
+                        <label for="dayscholar">Day Scholar</label>
+                    </div>
+                </fieldset>
+
+                <div>
+                    <label for="suggestions" class="block text-gray-700 font-medium">Suggest how to make this event better!</label>
+                    <textarea id="suggestions" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"></textarea>
+                </div>
+
+                <button type="submit" onclick="window.alert('Registered Successfully')" class="bg-green-500 hover:bg-green-700 text-white font-medium py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-green-300 focus:ring-offset-2">Register</button>
+            </form>
+
+        </div>
+    </div>
+
+</body>
+</html>

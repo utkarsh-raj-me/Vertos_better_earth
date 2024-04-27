@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VertosBetterEarth</title>
+  <link href="./style.css" rel="stylesheet"><style>
+    /* Add this style to position the close button on the right side */
+    #closeMenu {
+      top: 1rem;
+      right: 1rem;
+    }
+    /* Add this style to change the background color of the close button on hover */
+    #closeMenu:hover {
+      background-color: #2add5fab; /* Change to your desired hover color */
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-white">
+    <header class="absolute inset-x-0 top-0 z-50">
+      <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+        <div class="flex lg:flex-1">
+          <a href="./index.html" class="-m-1.5 p-1.5">
+            <span class="sr-only">Vertos Better Earth</span>
+            <img class="h-8 w-auto" src="./images/recycle-svgrepo-com (1).svg" alt="">
+          </a>
+        </div>
+        <div class="lg:hidden">
+          <button id="toggleMenu" type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+            <span class="sr-only">Open main menu</span>
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
+        </div>
+        <div class="hidden lg:flex lg:gap-x-12">
+          <a href="https://forms.gle/VKSFLMgC9vVxhmgXA" class="text-sm font-semibold leading-6 text-gray-900">Survey</a>
+          <a href="./report.html" class="text-sm font-semibold leading-6 text-gray-900">Reports</a>
+          <a href="./learn.html" class="text-sm font-semibold leading-6 text-gray-900">Learn</a>
+          <a href="./event.html" class="text-sm font-semibold leading-6 text-gray-900">Events</a>
+        </div>
+        <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+          <a href="./login.html" class="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
+        </div>
+      </nav>
+      <!-- Mobile menu, show/hide based on menu open state. -->
+      <div class="lg:hidden">
+        <nav id="sideMenu" class="hidden fixed inset-0 z-50 bg-white">
+          <div class="p-6 relative">
+            <button id="closeMenu" type="button" class="absolute top-1 right-1 rounded-full p-2.5 bg-gray-200 text-gray-700 hover:bg-red-500">
+              <span class="sr-only">Close side menu</span>
+              <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+            <a href="https://forms.gle/VKSFLMgC9vVxhmgXA" class="block mb-4 text-sm font-semibold text-gray-900">Survey</a>
+            <a href="./report.html" class="block mb-4 text-sm font-semibold text-gray-900">Reports</a>
+            <a href="./learn.html" class="block mb-4 text-sm font-semibold text-gray-900">Learn</a>
+            <a href="./event.html" class="block mb-4 text-sm font-semibold text-gray-900">Events</a>
+            <a href="./login.html" class="block text-sm font-semibold text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </nav>
+        <!-- Background overlay for the side menu -->
+        <div id="overlay" class="hidden fixed inset-0 z-40 bg-black opacity-25"></div>
+      </div>
+    </header>
+  
+  
+    <div class="relative isolate px-6 pt-14 lg:px-8">
+      <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
+        <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+      </div>
+      <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+        <div class="hidden sm:mb-8 sm:flex sm:justify-center">
+          <div class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+            Announcing our next event. <a href="event.html" class="font-semibold text-indigo-600"><span class="absolute inset-0" aria-hidden="true"></span>Read more <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </div>
+        <div class="text-center">
+          <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Join us for a better, cleaner living.</h1>
+          <blockquote class="mt-6 text-mb-3 leading-8 text-gray-600 italic font-medium pl-4">
+            "There is no such thing as 'away'. When we throw anything away it must go somewhere." 
+            <cite class="block mt-2 text-sm not-italic">- Annie Leonard</cite> 
+        </blockquote>
+          <div class="mt-10 flex items-center justify-center gap-x-6">
+            <a href="./login.html" class="bg-green-500 hover:bg-green-700 text-white font-medium py-2.5 px-5 rounded-full focus:outline-none focus:ring-4 focus:ring-green-300">
+              Get Started
+            </a>
+            <a href="./learn.html" class="text-sm font-semibold leading-6 text-gray-900">Learn more <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
+        <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="relative w-full glide-01">
+    <!-- Slides -->
+    <div class="overflow-hidden" data-glide-el="track">
+        <ul class="relative w-full overflow-hidden p-0 whitespace-no-wrap flex flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform]">
+            <li><div class="object-contain"><img src="./images/solid 1.jpg" class="w-full max-w-full max-h-full m-auto" /></div></li>
+            <li><img src="./images/solid3.jpg" class="w-full max-w-full max-h-full m-auto" /></li>
+            <li><img src="./images/solid4.jpg" class="w-full max-w-full max-h-full m-auto" /></li>
+            <li><img src="./images/solid12.jpeg" class="w-full max-w-full max-h-full m-auto" /></li>
+            <li><img src="./images/WhatsApp Image 2024-04-06 at 14.55.58.jpeg" class="w-full max-w-full max-h-full m-auto" /></li>
+        </ul>
+    </div>
+    <!-- Controls -->
+    <div class="absolute left-0 flex items-center justify-between w-full h-0 px-4 top-1/2 " data-glide-el="controls">
+        <button class="inline-flex items-center justify-center w-10 h-10 transition duration-300 border rounded-full lg:w-12 lg:h-12 text-slate-700 border-slate-700 hover:text-slate-900 hover:border-slate-900 focus-visible:outline-none bg-white/20" data-glide-dir="<" aria-label="prev slide">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                <title>prev slide</title>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
+            </svg>
+        </button>
+        <button class="inline-flex items-center justify-center w-10 h-10 transition duration-300 border rounded-full lg:w-12 lg:h-12 text-slate-700 border-slate-700 hover:text-slate-900 hover:border-slate-900 focus-visible:outline-none bg-white/20" data-glide-dir=">" aria-label="next slide">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                <title>next slide</title>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+            </svg>
+        </button>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/glide.js"></script>
+
+<script>
+    var glide01 = new Glide('.glide-01', {
+        type: 'carousel',
+        focusAt: 'center',
+        perView: 3,
+        autoplay: 3000,
+        animationDuration: 700,
+        gap: 24,
+        classes: {
+            activeNav: '[&>*]:bg-slate-700',
+        },
+        breakpoints: {
+            1024: {
+                perView: 2
+            },
+            640: {
+                perView: 1
+            }
+        },
+    });
+
+    glide01.mount();
+
+    document.getElementById("toggleMenu").addEventListener("click", function() {
+      document.getElementById("sideMenu").classList.toggle("hidden");
+      document.getElementById("overlay").classList.toggle("hidden");
+    });
+
+    document.getElementById("closeMenu").addEventListener("click", function() {
+      document.getElementById("sideMenu").classList.add("hidden");
+      document.getElementById("overlay").classList.add("hidden");
+    });
+</script>
+  <div class="bg-white mt-10"> 
+    <div class="container mx-auto p-8 rounded-lg shadow-md survey-container">
+        <h2 class="text-2xl font-bold mb-3 text-green-700">Community Survey</h2>
+        <p class="text-gray-600 mb-6">Help us improve our solid waste efforts. Please take a few minutes to share your feedback.</p>
+        <form> 
+          <a href="https://forms.gle/VKSFLMgC9vVxhmgXA" class="bg-green-500 hover:bg-green-700 text-white font-medium py-2.5 px-5 rounded-full focus:outline-none focus:ring-4 focus:ring-green-300">
+          Take Survey!
+          </a>
+          
+          </form>
+    </div>    
+</div>
+
+  
+</body>
+</html>
